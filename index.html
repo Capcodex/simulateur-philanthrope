@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quel philanthrope êtes-vous ?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>Quel philanthrope êtes-vous ?</h1>
+
+      <form id="philanthrope-form">
+        <div class="form-group">
+          <label>Qu’est-ce qui vous anime le plus dans votre volonté de vous engager ?</label>
+          <select id="finalite">
+            <option value="">-- Choisir --</option>
+            <option value="societe">Laisser une trace durable dans la société</option>
+            <option value="famille">Transmettre des valeurs à mes proches</option>
+            <option value="cause">Défendre une cause qui me révolte</option>
+            <option value="emotion">Soutenir ce qui me touche personnellement</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Comment percevez-vous le fait que votre engagement soit public ?</label>
+          <select id="visibilite">
+            <option value="">-- Choisir --</option>
+            <option value="anonyme">Je préfère l’anonymat</option>
+            <option value="maitrise">Une visibilité maîtrisée peut être utile</option>
+            <option value="inspirer">Je veux que cela inspire</option>
+            <option value="neutre">Je n’y ai jamais réfléchi</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Comment voyez-vous votre engagement philanthropique dans le temps ?</label>
+          <select id="temps">
+            <option value="">-- Choisir --</option>
+            <option value="long">Une mission de long terme</option>
+            <option value="cycles">Par projets ou cycles</option>
+            <option value="court">Actions concrètes et mesurables</option>
+            <option value="progressif">Je m’implique progressivement</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Si vous deviez vous engager aujourd’hui dans un domaine, ce serait :</label>
+          <select id="domaine">
+            <option value="">-- Choisir --</option>
+            <option value="culture">Soutenir l’accès à la culture</option>
+            <option value="social">Agir pour la justice sociale</option>
+            <option value="environnement">Proteger l’environnement</option>
+            <option value="jeunesse">Accompagner la jeunesse</option>
+          </select>
+        </div>
+
+        <button type="submit">Voir mon profil <span class="arrow">&rarr;</span></button>
+      </form>
+
+      <div id="resultat"></div>
+
+      <form id="lead-form">
+        <h2>Recevez votre guide personnalisé</h2>
+        <input type="email" placeholder="Email" required />
+        <select required>
+          <option value="">Votre région</option>
+          <option value="idf">Ile-de-France</option>
+          <option value="sud">Sud</option>
+          <option value="nord">Nord</option>
+        </select>
+        <select required>
+          <option value="">Niveau d'expérience</option>
+          <option value="debutant">Débutant</option>
+          <option value="initie">Initié</option>
+          <option value="expert">Expert</option>
+        </select>
+        <select required>
+          <option value="">Secteur d'intérêt</option>
+          <option value="art">Art</option>
+          <option value="sante">Santé</option>
+          <option value="education">Éducation</option>
+          <option value="social">Social</option>
+        </select>
+        <button type="submit">Recevoir le guide</button>
+      </form>
+    </div>
+
+    <div class="visual-section">
+      <div class="image-wrapper">
+        <img src="images/joinUs-1.png" alt="Art visuel 1" class="art-img art-main" />
+        <img src="images/joinUs-2.png" alt="Art visuel 2" class="art-img art-overlay" />
+      </div>
+    </div>
+  </div>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>
